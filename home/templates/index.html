@@ -1,0 +1,101 @@
+{% load static tailwind_tags %}
+
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiabetesPredection</title>
+    {% tailwind_css %}
+
+</head>
+<body>
+
+    <div class="text-center">
+        <img
+          src="/static/arman.jpg"
+          class="mx-auto mb-4 w-32 rounded-lg"
+          alt="Avatar" />
+        <h5 class="mb-2 text-xl font-medium leading-tight">Yeasin Arman</h5>
+        <p class="text-neutral-500 dark:text-neutral-400">Python, Django, Flask, Machine learning,Deep learning,Image processing, Computer Vision</p>
+      </div>
+
+     <!--  Application Details Start -->
+     <div class="w-full bg-grey-500">
+        <div class="container mx-auto py-8">
+            <div class="w-96 mx-auto bg-white rounded shadow">
+
+                <div class="mx-16 py-4 px-8 text-black text-xl font-bold border-b border-grey-500">Diabetes Predection
+                </div>
+
+                <form name="student_application" id="student_application" action="result">
+                    <div class="py-4 px-8">
+
+                        <div class="mb-4">
+                            <label class="block text-grey-darker text-sm font-bold mb-2">Pregnancies:</label>
+                            <input class=" border rounded w-full py-2 px-3 text-grey-darker" type="text"
+                                name="n1" id="student_id" value="" placeholder="Enter Pregnancies value">
+                     
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="block text-grey-darker text-sm font-bold mb-2">Glucose:</label>
+                            <input class=" border rounded w-full py-2 px-3 text-grey-darker" type="text"
+                                name="n2" id="student_id" value="" placeholder="Enter Glucose value">
+                     
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="block text-grey-darker text-sm font-bold mb-2">BloodPressure:</label>
+                            <input class=" border rounded w-full py-2 px-3 text-grey-darker" type="text"
+                                name="n3" id="student_id" value="" placeholder="Enter BloodPressure value">
+                     
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="block text-grey-darker text-sm font-bold mb-2">SkinThickness:</label>
+                            <input class=" border rounded w-full py-2 px-3 text-grey-darker" type="text"
+                                name="n4" id="student_id" value="" placeholder="Enter SkinThickness value">
+                     
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="block text-grey-darker text-sm font-bold mb-2">Insulin:</label>
+                            <input class=" border rounded w-full py-2 px-3 text-grey-darker" type="text"
+                                name="n5" id="student_id" value="" placeholder="Enter Insulin value">
+                     
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="block text-grey-darker text-sm font-bold mb-2">BMI:</label>
+                            <input class=" border rounded w-full py-2 px-3 text-grey-darker" type="text"
+                                name="n6" id="student_id" value="" placeholder="Enter BMI value">
+                     
+                        </div>
+                        <div class="mb-4">
+
+                            {% comment %} <input class="mb-2 mx-16 rounded-full py-1 px-24 bg-gradient-to-r from-green-400 to-blue-500  type="submit"> {% endcomment %}
+                            <button type="submit"
+                                class="mb-2 mx-16 rounded-full py-1 px-24 bg-gradient-to-r from-green-400 to-blue-500 ">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+            <h1 class="text-center text-4xl font-black text-gray-900 dark:text-white text-red-600 py-3.5 mb-4">Result: {{result2}}</h1>
+
+        </div>
+
+    </div>
+
+    
+    <!--  Application Details End -->
+    <!-- Student Visa End -->
+      
+</body>
+</html>
